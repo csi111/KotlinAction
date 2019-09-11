@@ -1,0 +1,2 @@
+include ':app', ':kotlininactionSample'
+rootProject.name='Kotlinaction'
