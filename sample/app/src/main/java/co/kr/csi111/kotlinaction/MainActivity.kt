@@ -1,6 +1,7 @@
 package co.kr.csi111.kotlinaction
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import co.kr.csi111.kotlinaction.android.ChapterAdapter
@@ -22,6 +23,6 @@ class MainActivity : AppCompatActivity(), ChapterAdapter.OnClickItemListener {
     }
 
     override fun onClick(chapter: Chapter) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        Toast.makeText(this, chapter.titleResource, Toast.LENGTH_LONG).show()
     }
 }
